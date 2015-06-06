@@ -1,4 +1,4 @@
-package MoneyAPI;
+package ChapterTwo;
 
 import java.math.BigDecimal;
 

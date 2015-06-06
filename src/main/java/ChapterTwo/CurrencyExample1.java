@@ -1,4 +1,4 @@
-package MoneyAPI;
+package ChapterTwo;
 
 import javax.money.CurrencyUnit;
 import javax.money.Monetary;
