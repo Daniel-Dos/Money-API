@@ -13,7 +13,7 @@ por exemplo, um e-commerce solicitar um pagamento de um produto a partir de um g
 Exemplos de Utilização da Money-API da JSR 354 (Money and Currency API).
 
 Nesse projeto esta incluida os codigos de exemplo da apostila que o Ótavio Santana criou. 
-Nesse projeto estou utilizando o Maven para adiconar os jars da Money-API.
+Nesse projeto estou utilizando o Maven para adicionar os jars da Money-API.
 
 <a href="http://daniel-dos.github.io/Money-API/"> Money-API Home</a>
 
