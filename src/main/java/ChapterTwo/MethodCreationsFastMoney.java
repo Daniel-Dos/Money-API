@@ -12,12 +12,12 @@ import org.javamoney.moneta.FastMoney;
  * @author Daniel Dias
  * 
  * <br>
- *         <blockquote> FastMoney: a implementação que representa o valor número
- *         com o primitivo long, das implementações apresentadas ela é a mais
- *         rápida, cerca de quinze vezes mais rápidas que as outras duas, além
- *         de ser mais leve na criação. Porém ela possui uma maior limitação em
- *         relação a precisão, caso seja necessário trabalhar com essa precisão,
- *         as operações não podem ultrapassar de cinco casas decimais.
+ *         <blockquote> FastMoney: a implementaï¿½ï¿½o que representa o valor nï¿½mero
+ *         com o primitivo long, das implementaï¿½ï¿½es apresentadas ela ï¿½ a mais
+ *         rï¿½pida, cerca de quinze vezes mais rï¿½pidas que as outras duas, alï¿½m
+ *         de ser mais leve na criaï¿½ï¿½o. Porï¿½m ela possui uma maior limitaï¿½ï¿½o em
+ *         relaï¿½ï¿½o a precisï¿½o, caso seja necessï¿½rio trabalhar com essa precisï¿½o,
+ *         as operaï¿½ï¿½es nï¿½o podem ultrapassar de cinco casas decimais.
  * 
  *         </blockquote>
  *
@@ -27,9 +27,9 @@ public class MethodCreationsFastMoney {
 		
 		CurrencyUnit currency = Monetary.getCurrency("BRL");
 		MonetaryAmount money = FastMoney.of(BigDecimal.TEN,currency);
-		//MonetaryAmount zero = FastMoney.zero(currency); nao funciona
+		MonetaryAmount zero = FastMoney.zero(currency); 
 		MonetaryAmount moneyFromCurrencyCode = FastMoney.of(10, "USD");
-		//MonetaryAmount moneyFromCents = FastMoney.ofMinor(currency,100_00); nao funciona
+		MonetaryAmount moneyFromCents = FastMoney.ofMinor(currency,100_00); 
 		
 		System.out.println("Usando o FastMonet : " + money);
 		System.out.println("Usando o FastMonet : " + moneyFromCurrencyCode);

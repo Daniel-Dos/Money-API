@@ -14,32 +14,32 @@ import org.javamoney.moneta.Money;
  * 
  * <br>
  * 
- * Utilização da representação do valor monetario,
+ * Utilizaï¿½ï¿½o da representaï¿½ï¿½o do valor monetario,
  * utilizando a interface MonetaryAmount, caracteristicas importantes
- * toas as implementaçoes precisam ser imutavel e thread-safe.
+ * toas as implementaï¿½oes precisam ser imutavel e thread-safe.
  * <br><br>
  * 
- * Dentro do moneta existem tres implementaçoes para a interface <code>MonetaryAmount</code>
+ * Dentro do moneta existem tres implementaï¿½oes para a interface <code>MonetaryAmount</code>
  * 
  *<br>
- * <blockquote>Money: A implementação padrao, ela representa o valor numerico com o BigDecimal.
+ * <blockquote>Money: A implementaï¿½ï¿½o padrao, ela representa o valor numerico com o BigDecimal.
  *</blockquote> 
  *
  *  <br>
  *  
  *  <blockquote>
- *   RoundedMoney: assim como a implementaçao Money, representa o valor numerico com o BigDecimal,
- *   a diferença entre eles é que com o RoundedMoney é possivel receber um MonetaryOperator para 
- *   ser chamada a cada operaçao, por exemplo, a cada operaçao aritimetica realizar uma operaçao de
+ *   RoundedMoney: assim como a implementaï¿½ao Money, representa o valor numerico com o BigDecimal,
+ *   a diferenï¿½a entre eles ï¿½ que com o RoundedMoney ï¿½ possivel receber um MonetaryOperator para 
+ *   ser chamada a cada operaï¿½ao, por exemplo, a cada operaï¿½ao aritimetica realizar uma operaï¿½ao de
  *   arredondamento.
  *  </blockquote>
  *  
  *  <br>
  *  <blockquote>
- *  FastMoney:  a implementação que representa o valor número com o primitivo long, das implementações apresentadas
-ela é a mais rápida, cerca de quinze vezes mais rápidas que as outras duas, além de ser mais leve na criação. Porém
-ela possui uma maior limitação em relação a precisão, caso seja necessário trabalhar com essa precisão, as
-operações não podem ultrapassar de cinco casas decimais.
+ *  FastMoney:  a implementaï¿½ï¿½o que representa o valor nï¿½mero com o primitivo long, das implementaï¿½ï¿½es apresentadas
+ela ï¿½ a mais rï¿½pida, cerca de quinze vezes mais rï¿½pidas que as outras duas, alï¿½m de ser mais leve na criaï¿½ï¿½o. Porï¿½m
+ela possui uma maior limitaï¿½ï¿½o em relaï¿½ï¿½o a precisï¿½o, caso seja necessï¿½rio trabalhar com essa precisï¿½o, as
+operaï¿½ï¿½es nï¿½o podem ultrapassar de cinco casas decimais.
  *  
  *  </blockquote>
  */
@@ -48,9 +48,9 @@ public class MethodsCreationMoney {
 		
 		CurrencyUnit currency = Monetary.getCurrency("BRL"); // recupera o tipo da moeda : USD, BRL, JPY, EUR,etc
 		MonetaryAmount money = Money.of(BigDecimal.TEN, currency); // O metodo of passando um number e um codido de moeda.
-		//MonetaryAmount zero = Money.zero(currency); // nao funciona
+		MonetaryAmount zero = Money.zero(currency); 
 		MonetaryAmount moneyFromCurrencyCode = Money.of(10,"USD");
-	   //MonetaryAmount moneyFromCents = Money.ofMiner(currency, 100_00); // nao funciona
+	   MonetaryAmount moneyFromCents = Money.ofMinor(currency, 100_00); 
 		
 		System.out.println("Metodo of : " + money);
 	}

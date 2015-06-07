@@ -11,11 +11,11 @@ import org.javamoney.moneta.RoundedMoney;
 /**
  * @author Daniel Dias <br>
  * 
- *         <blockquote> RoundedMoney: assim como a implementaçao Money,
- *         representa o valor numerico com o BigDecimal, a diferença entre eles
- *         é que com o RoundedMoney é possivel receber um MonetaryOperator para
- *         ser chamada a cada operaçao, por exemplo, a cada operaçao aritimetica
- *         realizar uma operaçao de arredondamento. </blockquote>
+ *         <blockquote> RoundedMoney: assim como a implementaï¿½ao Money,
+ *         representa o valor numerico com o BigDecimal, a diferenï¿½a entre eles
+ *         ï¿½ que com o RoundedMoney ï¿½ possivel receber um MonetaryOperator para
+ *         ser chamada a cada operaï¿½ao, por exemplo, a cada operaï¿½ao aritimetica
+ *         realizar uma operaï¿½ao de arredondamento. </blockquote>
  *
  */
 public class MethodCreationRoundedMoney {
@@ -23,9 +23,9 @@ public class MethodCreationRoundedMoney {
 		
 		CurrencyUnit currenct = Monetary.getCurrency("BRL");
 		MonetaryAmount money = RoundedMoney.of(BigDecimal.TEN,currenct);
-		//MonetaryAmount zero = RoundedMoney.zero(currenct); nao funciona
+		MonetaryAmount zero = RoundedMoney.zero(currenct); 
 		MonetaryAmount moneyFromCurrencyCode = RoundedMoney.of(10, "USD");
-		//MonetaryAmount moneyFromCents = RoundedMoney.ofMinor(currenct); nao funciona
+		MonetaryAmount moneyFromCents = RoundedMoney.ofMinor(currenct,100_00);
 		
 		System.out.println("usando Roundmoney :" + money);
 		System.out.println("usando roundedMoney :" + moneyFromCurrencyCode);
