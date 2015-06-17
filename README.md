@@ -15,6 +15,9 @@ Exemplos de Utilização da Money-API da JSR 354 (Money and Currency API).
 Nesse projeto esta incluida os codigos de exemplo da apostila que o Ótavio Santana criou. 
 Nesse projeto estou utilizando o Maven para adicionar os jars da Money-API.
 
+<p>Segue abaixo o link para baixar a apostila que o �tavio Santana publicou.
+<a href="http://otaviojava.gitbooks.io/money-api/"> Money-API Apostila</a></p>
+
 <a href="http://daniel-dos.github.io/Money-API/"> Money-API Home</a>
 
 
